@@ -1,13 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- nomor 1 permen ana -->
     <script>
-        
+      let permenAwal = 30;
+      let permenSetelahDiberikan = permenAwal - 10;
+      let permenSetelahDibeli = permenSetelahDiberikan * 2;
+      let kuadratPermen = permenSetelahDibeli * permenSetelahDibeli;
+      console.log(kuadratPermen);
+
+      //   nomor 2 kucing ana
+      let kucingPertama = "ali";
+      let kucingKedua = "hasan";
+      let gabunganNamaKucing = kucingPertama + " dan " + kucingKedua;
+      console.log(gabunganNamaKucing);
+
+      //   nomor 3
+      let belalang = "12";
+      let nyamuk = "11";
+      let angsa = 10;
+
+      let hasilBelalangNyamuk = +belalang + nyamuk;
+      console.log(hasilBelalangNyamuk);
+
+      let hasilNyamukAngsa = +nyamuk + angsa;
+      console.log(hasilNyamukAngsa);
+      //   mengapa hasil dari variable belalang nyamuk dan nyamuk angsa berbeda?
+      // karna tanda "+" dapat mengkonversikan yang awalnya string, menjadi numerik namun karna yang pertama dari var nyamuk masih menjadi string, maka yang terjadi malah penggabungan bukan penjumlahan seperti dalam hukum matematika
+      // nah karna var angsa adalah numerik, lalu nyamuk yang awalnya string terkonverensi menjadi numerik karna adanya "+" maka yang terjadi adalah penjumlahan yang sama seperti hukum matematika yang biasa kita pelajari.
+
+      //   nomor 4
+      let bukuFiksi = 5;
+      let hargaBukuFiksi = 5000;
+      let bukuNonFiksi = 3;
+      let hargaBukuNonFiksi = 7000;
+      let pena = 2;
+      let hargaPena = 2000;
+
+      let totalBiaya =
+        bukuFiksi * hargaBukuFiksi +
+        bukuNonFiksi * hargaBukuNonFiksi +
+        pena * hargaPena;
+      console.log(totalBiaya);
+
+      //   nomor 5
+      let x = 5 + 3 * 2;
+      console.log(x);
+
+      // nomor 6
+      let kresek = 4;
+      let kotak = 6;
+      let ember = 5 + (kresek = kotak);
+      console.log("Ember: " + ember);
+      console.log("Kresek: " + kresek);
+      console.log("Kotak: " + kotak);
+
+      //   nomor 7
+      let x = 5;
+      let y = x + 10;
+      let z = y + 15;
+
+      console.log("x: " + x);
+      console.log("y: " + y);
+      console.log("z: " + z);
+
+      //   nomor 8
+      let produk = 4;
+      produk *= 2; // Sekarang produk adalah 8
+      produk *= 2; // Sekarang produk adalah 16
+
+      console.log("Produk: " + produk);
+
+      //   nomor 9
+      let x = 5;
+      x++;
+      console.log("Nilai x setelah x++: " + x);
+
+      let y = 8;
+      --y;
+      console.log("Nilai y setelah --y: " + y);
+
+    //   Pertama, kita mendefinisikan variabel x dan memberinya nilai awal 5. Kemudian, kita menggunakan operator inkremen (++) untuk menambahkan 1 ke x. Jadi, x sekarang memiliki nilai 6.
+    //   Kemudian, kita mendefinisikan variabel y dan memberinya nilai awal 8. Kita menggunakan operator dekremen (--) untuk mengurangi 1 dari y. Jadi, y sekarang memiliki nilai 7.
+    //   Akhirnya, kita mencetak nilai x dan y ke konsol.
+    //   Jadi, jika Anda menjalankan kode ini, Anda akan melihat bahwa x memiliki nilai 6 dan y memiliki nilai 7. Ini adalah contoh dari penggunaan operator inkremen dan dekremen dalam JavaScript.
     </script>
-</body>
+  </body>
 </html>
