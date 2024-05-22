@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- no 1 -->
+    <p id="teks">Ngoawor</p>
+    <p id="first">INI TEKS awal</p>
+    <div id="hasil"></div>
+    <ul id="myList"></ul>
+    <input type="text" id="ukuranBaju" placeholder="Masukkan ukuran baju" />
+    <button onclick="tampilkanUkuran()">Tampilkan</button>
+    <input type="text" id="ukuranCelana" placeholder="Masukkan ukuran celana" />
+    <button onclick="tambahUkuran()">Tampilkan</button>
+    <ul id="listUkuran"></ul>
+    <script>
+      var elem = document.getElementById("teks");
+      console.log(elem.innerHTML);
+      alert("ngoawor");
+    </script>
+    <!-- no 2 -->
+    <script>
+      var elem = document.getElementById("first");
+      console.log(elem.innerText);
+      elem.innerText = "nilai sudah diganti bah";
+    </script>
+    <script>
+      let mynumber = 100;
+      document.getElementById("hasil").innerText = mynumber;
+    </script>
+    <!-- no 3 -->
+    <script>
+      // Membuat elemen li baru
+      var liBaru = document.createElement("li");
+
+      // Menambahkan teks ke li baru
+      liBaru.innerHTML = "List Makan Siang";
+
+      // Mendapatkan elemen ul dengan id "myList"
+      var ul = document.getElementById("myList");
+
+      // Menambahkan li baru ke ul
+      ul.appendChild(liBaru);
+    </script>
+    <!-- no 4 -->
+    <script>
+      function tampilkanUkuran() {
+        // Mendapatkan nilai dari input dengan id "ukuranBaju"
+        var ukuran = document.getElementById("ukuranBaju").value;
+
+        // Menampilkan nilai tersebut di console log
+        console.log(ukuran);
+      }
+    </script>
+    <!-- no 5 -->
+    <script>
+      function tambahUkuran() {
+        // Mendapatkan nilai dari input dengan id "ukuranCelana"
+        var ukuran = document.getElementById("ukuranCelana").value;
+
+        // Menambahkan "cm" di belakang input
+        ukuran += " cm";
+
+        // Membuat elemen li baru
+        var liBaru = document.createElement("li");
+
+        // Menambahkan teks ke li baru
+        liBaru.innerHTML = ukuran;
+
+        // Mendapatkan elemen ul
+        var ul = document.getElementById("listUkuran");
+
+        // Menambahkan li baru ke ul
+        ul.appendChild(liBaru);
+      }
+    </script>
+  </body>
+</html>
