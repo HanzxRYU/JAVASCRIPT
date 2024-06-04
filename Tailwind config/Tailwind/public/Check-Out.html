@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check-Out</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-stone-400">
+    <!-- Konten website Anda -->
+    <div
+      class="bg-white w-[1380px] h-[200px] mt-6 mx-auto border border-slate-400"
+    >
+      <div class="flex">
+        <form>
+          <input
+            type="checkbox"
+            name="barang"
+            id="pesanan"
+            class="w-6 h-6 mt-20 ml-7"
+          />
+        </form>
+
+        <img
+          src="You Are My Sunshine Lebron Wall And Art Print.jpeg"
+          class="w-50 h-40 mt-4 ml-10 bg-contain rounded-md"
+        />
+        <div class="ml-3">
+          <p class="font-medium text-slate-800 text-xl mt-4 ml-2">
+            Budak hitam Murah Terjangkau <br />
+            ASAL Ngawi
+          </p>
+          <div
+            class="border-2 border-green-400 text-green-400 rounded-sm w-[150px] h-[25px] pl-1 ml-2 mt-1"
+          >
+            <p class="-mt-[3px]">100% Berkompoten</p>
+          </div>
+          <img src="Diskon.jpeg" class="w-[70px] h-[40px] mt-2 ml-2" />
+        </div>
+        <div class="mt-20 text-gray-600">
+          <label for="Bakat">Pilih Bakat:</label>
+          <select name="Bakat" id="Bakat" class="text-center text-gray-600">
+            <option value="Memasak">Memasak</option>
+            <option value="Bertani">Bertani</option>
+            <option value="Bermain-Basket">Bermain Basket</option>
+            <option value="ALL-ROLE">ALL-ROLE</option>
+          </select>
+        </div>
+        <div class="mt-20 ml-6">
+          <h1 class="font-medium" id="HargaBudak">12000000</h1>
+        </div>
+        <div class="flex">
+          <button class="border-2 h-7 ml-6 mt-20" onclick="kurang()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              class="items-center"
+            >
+              <path fill="currentColor" d="M19 12.998H5v-2h14z" />
+            </svg></button
+          ><input
+            type="number"
+            class="w-12 text-center border-y-2 h-7 mt-20"
+            value="1"
+            id="nominal"
+          /><button class="border-2 h-7 mt-20" onclick="tambah()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              class="items-center"
+            >
+              <path
+                fill="currentColor"
+                d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-20 ml-7 text-orange-600 font-medium" id="TotalHarga">
+          <h1></h1>
+        </div>
+        <div class="mt-20 ml-4 text-center">
+          <label for="reset" class="text-gray-600">Hapus</label>
+          <br />
+          <select name="Bakat" id="Bakat" class="text-orange-600 text-center">
+            <option value="Memasak">Produk Serupa</option>
+            <option value="Bertani">Bertani</option>
+            <option value="Bermain-Basket">Bermain Basket</option>
+            <option value="ALL-ROLE">ALL-ROLE</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white w-[1380px] h-[120px] mx-auto border border-slate-600">
+      <p class="ml-[26px] mt-2 text-black font-normal">Voucher Gratis Ongkir</p>
+      <div class="flex">
+        <form>
+          <input
+            type="checkbox"
+            name="barang"
+            id="pesanan"
+            class="w-6 h-6 mt-[18px] ml-7"
+          />
+        </form>
+        <img src="ongkir.jpeg" class="w-[86px] h-[38px] mt-2.5 ml-5" />
+        <p class="mt-4 ml-4 text-black font-normal">
+          Gratis ongkir s/d Rp15.000 dengan min. Belanja Rp;0 Gratis ongkir s/d
+          Rp20.000.000 dengan min. Belanja Rp50.000.000
+          <button class="text-blue-600">Pelajari lebih lanjut.</button>
+        </p>
+      </div>
+    </div>
+    <div class="bg-white w-[1380px] h-[120px] mx-auto border border-slate-600">
+      <p class="ml-[26px] mt-2 text-black font-normal">Masukan Kode Voucher</p>
+      <div class="flex">
+        <img src="Voucher.jpeg" class="w-[100px] ml-[26px] mt-2" />
+        <input
+          type="text"
+          name="task"
+          id="inputVoucher"
+          class="h-[40px] w-[200px] mt-[9px] rounded-md border-black shadow-sm focus:border-slate-700 ml-6 border-2 text-center"
+          placeholder=" Masukan Voucher..."
+        />
+        <button
+          onclick="ResultVoucher()"
+          id="CheckVoucher"
+          class="bg-blue-600 w-[120px] h-[50px] mt-[3px] ml-4 rounded-lg hover:bg-blue-800"
+        >
+          <p class="text-white font-medium text-center">CHECK</p>
+        </button>
+        <h1 id="hasilvoucher" class="mt-[14px] ml-6"></h1>
+      </div>
+      
+    </div>
+    <footer
+      class="fixed inset-x-0 bottom-0 bg-white w-[1500px] h-[180px] rounded-lg mb-5 mx-auto"
+    >
+      <button
+        class="bg-blue-600 w-[180px] h-[50px] mt-[120px] ml-[1300px] rounded-lg hover:bg-blue-800"
+      >
+        <p class="text-white font-medium text-center">PESAN SEKARANG.</p>
+      </button>
+    </footer>
+
+    <script>
+      var budak = document.getElementById("HargaBudak").innerHTML;
+      document.getElementById("TotalHarga").innerHTML = +budak;
+      console.log(budak);
+
+      function tambah() {
+        var input2 = document.getElementById("nominal").value;
+        input2++;
+        document.getElementById("nominal").value = input2;
+        console.log(input2);
+        document.getElementById("nominal").value = input2;
+        var hasil = input2 * budak;
+        console.log(hasil);
+        document.getElementById("TotalHarga").innerHTML = hasil;
+      }
+      function kurang() {
+        var input1 = document.getElementById("nominal").value;
+        input1--;
+        document.getElementById("nominal").value = input1;
+        console.log(input1);
+        document.getElementById("nominal").value = input1;
+        var hasil = input1 * budak;
+        document.getElementById("TotalHarga").innerHTML = hasil;
+      }
+      function ResultVoucher() {
+        var inputVoucher = document.getElementById("inputVoucher").value;
+        if (inputVoucher == "Discount 50%") {
+          console.log(inputVoucher);
+
+          document.getElementById("hasilvoucher").innerHTML =
+            "Voucher Berhasil";
+          document
+            .getElementById("hasilvoucher")
+            .classList.remove("text-red-500", "font-bold");
+          document
+            .getElementById("hasilvoucher")
+            .classList.add("text-green-500", "font-bold");
+        } else if (inputVoucher == "Discount 20%") {
+          document.getElementById("hasilvoucher").innerHTML =
+            "Vocher Berhasil!";
+          document
+            .getElementById("hasilvoucher")
+            .classList.remove("text-red-500", "font-bold");
+          document
+            .getElementById("hasilvoucher")
+            .classList.add("text-green-500", "font-bold");
+        } else {
+          document.getElementById("hasilvoucher").innerHTML = "Coba Lagi";
+          document
+            .getElementById("hasilvoucher")
+            .classList.remove("text-green-500", "font-bold");
+          document
+            .getElementById("hasilvoucher")
+            .classList.add("text-red-500", "font-bold");
+        }
+      }
+    </script>
+  </body>
+</html>

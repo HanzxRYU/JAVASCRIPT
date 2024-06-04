@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-white dark:bg-black dark:text-white">
+    <header
+      class="h-100 bg-white text-black backdrop-filter backdrop-blur-md shadow-md flex justify-between items-center p-4 text-center md:p-8 md:mx-auto"
+    >
+      <div class="flex space-x-4">
+        <div class="w-30 h-30 bg-black"></div>
+        <div class="w-30 h-30 bg-black"></div>
+        <div class="w-30 h-30 bg-black"></div>
+      </div>
+
+      <div
+        class="mx-auto flex justify-center items-center mr-4 ml-6 md:mx-auto md:mr-4 md:ml-4"
+      >
+        <label class="relative block">
+          <span class="sr-only">Search</span>
+          <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+            <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </svg>
+          </span>
+          <input
+            class="placeholder:italic placeholder:text-slate-400 block bg-white w-full md:w-[300px] border border-slate-300 rounded-md py-2 pl-9 pr-6 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+            placeholder="Cari yang kamu mau..."
+            type="text"
+            name="search"
+          />
+        </label>
+      </div>
+
+      <div class="flex space-x-4 md:flex md:space-x-2">
+        <a
+          class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 mx-2 md:mx-4"
+          href="Tugas-8(2).html"
+        >
+          Login
+        </a>
+
+        <a
+          class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 mx-2 md:mx-4"
+          href="Tugas-9(2).html"
+        >
+          Registrasi
+        </a>
+      </div>
+    </header>
+
+    <main class="p-4">
+      <div>
+        <h1 class="font-bold text-center mb-4">Updates</h1>
+      </div>
+      <div class="flex items-center justify-center my-auto">
+        <!-- svg matahari, ambil code nya di hero-icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+          />
+        </svg>
+        <button class="h-5 w-10 rounded-full bg-slate-500 p-0.5">
+          <div class="h-4 w-4 rounded-full bg-white dark:translate-x-5"></div>
+        </button>
+        <!-- svg bulan, ambil code nya di hero-icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="dark:white h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+          />
+        </svg>
+      </div>
+      <div class="flex space-x-2 justify-center items-center">
+        <div class="space-x-20 flex mt-3">
+          <div
+            class="project-box w-[240px] md:w-[420px] h-[320px] md:h-[460px] bg-opacity-75 backdrop-filter backdrop-blur-md p-8 rounded-lg shadow-lg mx-auto dark:bg-white"
+          >
+            <!-- iframe -->
+            <iframe
+              width="160"
+              height="115"
+              src="https://www.youtube.com/embed/dMSU1aGD1lw?si=I_AikQNuMXMLrGW7"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="md:w-[250px] md:h-[200px] md:flex md:mx-auto"
+            ></iframe>
+            <br />
+            <h2 class="text-2xl font-bold mb-2 dark:text-black">KISAH ISLAM</h2>
+            <div class="flex items-center mb-2 truncate">
+              <p class="truncate dark:text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt quo dignissimos minus id optio iste consequuntur ex
+                vero ipsa, eos sunt totam quaerat corporis reiciendis itaque
+                commodi est iure. Vel, at? Facilis quisquam voluptatibus, quia
+                voluptatum debitis eligendi ipsum amet ullam doloremque quam
+                repellat praesentium, fugiat rem eius ipsam, deserunt delectus
+                eaque inventore? Temporibus magni nisi fugit dolorem. Eaque
+                consectetur, id totam est error quos corporis doloribus
+                exercitationem ea reiciendis officia et recusandae repudiandae,
+                a ut veritatis
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:visible lg:flex">
+          <div class="space-x-20 flex mt-3">
+            <div
+              class="project-box w-[240px] md:w-[420px] h-[320px] md:h-[460px] bg-opacity-75 backdrop-filter backdrop-blur-md p-8 rounded-lg shadow-lg mx-auto dark:bg-white"
+            >
+              <!-- iframe -->
+              <iframe
+                width="160"
+                height="115"
+                src="https://www.youtube.com/embed/dMSU1aGD1lw?si=I_AikQNuMXMLrGW7"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                class="md:w-[250px] md:h-[200px] md:flex md:mx-auto"
+              ></iframe>
+              <br />
+              <h2 class="text-2xl font-bold mb-2 dark:text-black">
+                KISAH ISLAM
+              </h2>
+              <div class="flex items-center mb-2 truncate">
+                <p class="truncate dark:text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nesciunt quo dignissimos minus id optio iste consequuntur ex
+                  vero ipsa, eos sunt totam quaerat corporis reiciendis itaque
+                  commodi est iure. Vel, at? Facilis quisquam voluptatibus, quia
+                  voluptatum debitis eligendi ipsum amet ullam doloremque quam
+                  repellat praesentium, fugiat rem eius ipsam, deserunt delectus
+                  eaque inventore? Temporibus magni nisi fugit dolorem. Eaque
+                  consectetur, id totam est error quos corporis doloribus
+                  exercitationem ea reiciendis officia et recusandae
+                  repudiandae, a ut veritatis
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="font-bold mt-16 mb-5 text-2xl mr-4 md:mr-16">KATA ORANG:</h1>
+      <div class="md:flex space-x-8 md:justify-center">
+        <div class="review-boxes md:flex space-x-2 md:justify-center mt-10">
+          <div
+            class="review-box bg-opacity-75 backdrop-filter backdrop-blur-md p-8 rounded-lg shadow-lg justify-center mr-1 dark:bg-slate-400"
+          >
+            <div class="text-center flex justify-center items-center">
+              <h1 class="font-bold dark:text-black">Mas Taufiq</h1>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 512 512"
+              class="mx-auto mt-3 dark:text-black"
+            >
+              <path
+                fill="currentColor"
+                d="M332.64 64.58C313.18 43.57 286 32 256 32c-30.16 0-57.43 11.5-76.8 32.38c-19.58 21.11-29.12 49.8-26.88 80.78C156.76 206.28 203.27 256 256 256s99.16-49.71 103.67-110.82c2.27-30.7-7.33-59.33-27.03-80.6M432 480H80a31 31 0 0 1-24.2-11.13c-6.5-7.77-9.12-18.38-7.18-29.11C57.06 392.94 83.4 353.61 124.8 326c36.78-24.51 83.37-38 131.2-38s94.42 13.5 131.2 38c41.4 27.6 67.74 66.93 76.18 113.75c1.94 10.73-.68 21.34-7.18 29.11A31 31 0 0 1 432 480"
+              />
+            </svg>
+            <br />
+            <div id="parent" class="space-x-2 flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#ffce31"
+                  d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7l-7 22.1L32 47.3L50.5 61l-7.1-22.2z"
+                />
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#ffce31"
+                  d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7l-7 22.1L32 47.3L50.5 61l-7.1-22.2z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#ffce31"
+                  d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7l-7 22.1L32 47.3L50.5 61l-7.1-22.2z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#ffce31"
+                  d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7l-7 22.1L32 47.3L50.5 61l-7.1-22.2z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#ffce31"
+                  d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7l-7 22.1L32 47.3L50.5 61l-7.1-22.2z"
+                />
+              </svg>
+            </div>
+            <br />
+            <p class="text-center dark:text-black">MASYA ALLAH</p>
+          </div>
+        </div>
+        <div
+          class="review-boxes md:flex space-x-2 justify-center mt-10 md:visible hidden"
+        >
+          <div
+            class="review-box bg-opacity-75 backdrop-filter backdrop-blur-md p-8 rounded-lg shadow-lg justify-center mr-1 dark:bg-slate-400"
+          >
+            <div class="text-center justify-center">
+              <h1 class="font-bold dark:text-black">Mas Bymeg</h1>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 512 512"
+              class="mx-auto mt-3 dark:text-black"
+            >
+              <path
+                fill="currentColor"
+                d="M332.64 64.58C313.18 43.57 286 32 256 32c-30.16 0-57.43 11.5-76.8 32.38c-19.58 21.11-29.12 49.8-26.88 80.78C156.76 206.28 203.27 256 256 256s99.16-49.71 103.67-110.82c2.27-30.7-7.33-59.33-27.03-80.6M432 480H80a31 31 0 0 1-24.2-11.13c-6.5-7.77-9.12-18.38-7.18-29.11C57.06 392.94 83.4 353.61 124.8 326c36.78-24.51 83.37-38 131.2-38s94.42 13.5 131.2 38c41.4 27.6 67.74 66.93 76.18 113.75c1.94 10.73-.68 21.34-7.18 29.11A31 31 0 0 1 432 480"
+              />
+            </svg>
+            <br />
+            <div id="parent" class="space-x-3 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#ffce31"
+                  d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7l-7 22.1L32 47.3L50.5 61l-7.1-22.2z"
+                />
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#ffce31"
+                  d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7l-7 22.1L32 47.3L50.5 61l-7.1-22.2z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#ffce31"
+                  d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7l-7 22.1L32 47.3L50.5 61l-7.1-22.2z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#ffce31"
+                  d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7l-7 22.1L32 47.3L50.5 61l-7.1-22.2z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#ffce31"
+                  d="M62 25.2H39.1L32 3l-7.1 22.2H2l18.5 13.7l-7 22.1L32 47.3L50.5 61l-7.1-22.2z"
+                />
+              </svg>
+            </div>
+            <br />
+            <p class="text-center dark:text-black">Menyala Abangku</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center mt-5">
+      <div class="contact">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"
+          />
+        </svg>
+        <p>Email: example@example.com</p>
+      </div>
+      <div class="contact">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+          />
+        </svg>
+        <p>Phone: +123 456 7890</p>
+      </div>
+      <div class="contact">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 32 32"
+        >
+          <path
+            fill="currentColor"
+            d="m16 24l-6.09-8.6A8.14 8.14 0 0 1 16 2a8.08 8.08 0 0 1 8 8.13a8.2 8.2 0 0 1-1.8 5.13Zm0-20a6.07 6.07 0 0 0-6 6.13a6.19 6.19 0 0 0 1.49 4L16 20.52L20.63 14A6.24 6.24 0 0 0 22 10.13A6.07 6.07 0 0 0 16 4"
+          />
+          <circle cx="16" cy="9" r="2" fill="currentColor" />
+          <path
+            fill="currentColor"
+            d="M28 12h-2v2h2v14H4V14h2v-2H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V14a2 2 0 0 0-2-2"
+          />
+        </svg>
+        <p>123 Street, City, Country</p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1066253614185!2d106.6145220750391!3d-6.380236093610109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e36544dcaf73%3A0xeedb717676dc68d0!2sPondok%20Tahfizh%20Plus%20Abu%20Dzar!5e0!3m2!1sid!2sid!4v1707383207110!5m2!1sid!2sid"
+        width="200"
+        height="100"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="mt-5 items-center justify-center flex mx-auto"
+      ></iframe>
+    </footer>
+    <script>
+      function toDT() {
+        if (localStorage.getItem("theme") === "dark") {
+          localStorage.setItem("theme", "light");
+          document.documentElement.classList.remove("dark");
+        } else {
+          localStorage.setItem("theme", "dark");
+          document.documentElement.classList.add("dark");
+        }
+      }
+      document.querySelector("button").addEventListener("click", toDT);
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+  </body>
+</html>

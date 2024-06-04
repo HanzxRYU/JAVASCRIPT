@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-200">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl mb-4 text-center">Kalkulator Sederhana</h2>
+      <input
+        type="number"
+        id="num1"
+        class="border p-2 rounded-md w-full mb-3"
+        placeholder="Masukan angka"
+      />
+      <input
+        type="number"
+        id="num2"
+        class="border p-2 rounded-md w-full mb-3"
+        placeholder="Masukan angka berikutnya"
+      />
+      <div class="flex bg-white rounded-md justify-center mb-3 space-x-2">
+        <button
+          class="bg-green-400 p-2 basis-1/2 rounded-md hover:bg-green-600 text-white"
+          onclick="operationTambah()"
+        >
+          Tambah
+        </button>
+        <button
+          class="bg-green-400 p-2 basis-1/2 rounded-md hover:bg-green-600 text-white"
+          onclick="operationKurang()"
+        >
+          Kurang
+        </button>
+      </div>
+      <div class="flex bg-white rounded-md justify-center space-x-2">
+        <button
+          class="bg-green-400 p-2 basis-1/2 rounded-md hover:bg-green-600 text-white"
+          onclick="operationKali()"
+        >
+          Kali
+        </button>
+        <button
+          class="bg-green-400 p-2 basis-1/2 rounded-md hover:bg-green-600 text-white"
+          onclick="operationBagi()"
+        >
+          Bagi
+        </button>
+      </div>
+      <button
+        id="calculate"
+        class="bg-green-400 text-white p-2 rounded w-full mt-6 hover:bg-green-600"
+      >
+        Hitung
+      </button>
+      <h2 id="result" class="text-4xl mt-4">:</h2>
+    </div>
+    <script>
+       function operationTambah() {
+         var num1 = document.getElementById("num1").value;
+         var confnum1 = +num1;
+         console.log(confnum1);
+
+         var num2 = document.getElementById("num2").value;
+         var confnum2 = +num2;
+         console.log(confnum2);
+
+         var result = confnum1 + confnum2;
+         console.log(result);
+
+         var hasil = document.createElement("p");
+         hasil.innerText = result;
+         document.getElementById("result").appendChild(hasil);
+       }
+      function operationKurang() {
+         var num1 = document.getElementById('num1').value;
+         var confnum1 = +num1;
+         console.log(confnum1);
+
+         var num2 = document.getElementById('num2').value;
+         var confnum2 = +num2;
+         console.log(confnum2);
+
+         var result = confnum1 - confnum2;
+         console.log(result);
+
+         var hasil = document.createElement("p");
+         hasil.innerText = result;
+         document.getElementById("result").appendChild(hasil);
+      }
+      function operationKali() {
+         var num1 = document.getElementById("num1").value;
+         var confnum1 = +num1;
+         console.log(confnum1);
+
+         var num2 = document.getElementById("num2").value;
+         var confnum2 = +num2;
+         console.log(confnum2);
+
+         var result = confnum1 * confnum2;
+         console.log(result);
+
+         var hasil = document.createElement("p");
+         hasil.innerText = result;
+         document.getElementById("result").appendChild(hasil);
+       }
+       function operationBagi() {
+         var num1 = document.getElementById("num1").value;
+         var confnum1 = +num1;
+         console.log(confnum1);
+
+         var num2 = document.getElementById("num2").value;
+         var confnum2 = +num2;
+         console.log(confnum2);
+
+         var result = confnum1 / confnum2;
+         console.log(result);
+
+         var hasil = document.createElement("p");
+         hasil.innerText = result;
+         document.getElementById("result").appendChild(hasil);
+       }
+    </script>
+  </body>
+</html>
